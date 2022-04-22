@@ -114,8 +114,7 @@ let categories = [
 
 for(let item of arr){
     for(let item2 of categories){
-        let kurs = item2.course.trim()
-        if(item.info.faculity.toUpperCase('') === kurs){
+        if(item.info.faculity.toUpperCase('') === item2.course.trim()){
             item2.count++
         }
     }
